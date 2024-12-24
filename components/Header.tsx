@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Logo from "@/assets/logo.svg";
 import Image from "next/image";
 import { useState } from "react";
@@ -13,7 +13,7 @@ const Header = () => {
     const fromTop = e.clientY < e.currentTarget.getBoundingClientRect().top;
     const fromLeft = e.clientX < e.currentTarget.getBoundingClientRect().left;
     const fromRight = e.clientX > e.currentTarget.getBoundingClientRect().right;
-    
+
     if (fromTop || fromLeft || fromRight) {
       setIsOpen(false);
     }
@@ -22,12 +22,10 @@ const Header = () => {
   return (
     <div className="flex justify-center items-center shadow-custom">
       <div className="flex flex-row justify-between min-w-[1200px] relative px-6 py-3">
-        {/* Logo Posicionada à Esquerda */}
         <div className="absolute">
           <Image src={Logo} alt="logo escola" />
         </div>
-        
-        {/* Navegação à Direita */}
+
         <div className="flex flex-col gap-2 max-w-[960px] ml-auto">
           <nav className="flex justify-end font-fredoka gap-2 text-base">
             <button className="w-[179px] text-red-default border-[3px] border-red-default rounded-[50px] flex justify-center text-center">
@@ -38,14 +36,14 @@ const Header = () => {
             </button>
           </nav>
           <nav className="flex justify-end font-fredoka gap-4 text-base text-[#333]">
-            <div 
-              className="relative"
+            <div
+              className="relative flex items-center gap-1 group hover:text-red-default"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMenuLeave}
             >
-              <div className="hover:text-red-default">
-                Balãozinho mágico
-              </div>
+              <span>Balãozinho mágico</span>
+              <div className="w-0 h-0 border-l-[5px] border-r-[5px] border-t-[5px] border-transparent border-t-[#333] group-hover:border-t-red-default" />
+
               {isOpen && (
                 <div
                   onMouseLeave={handleMouseLeave}
