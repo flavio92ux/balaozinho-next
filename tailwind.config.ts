@@ -8,10 +8,19 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        fredoka: ['Fredoka One', 'sans-serif']
       },
+      colors: {
+        red: {
+          default: '#CC453C'
+        },
+        blue: {
+          default: '#4085C6'
+        }
+      }
     },
   },
   plugins: [],
