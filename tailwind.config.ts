@@ -20,7 +20,10 @@ export default {
         blue: {
           default: '#4085C6'
         }
-      }
+      },
+      boxShadow: {
+        custom: '0px 6px 12px 0px rgba(0, 0, 0, 0.16)',
+      },
     },
   },
   plugins: [],
