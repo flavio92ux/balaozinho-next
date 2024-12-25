@@ -15,7 +15,7 @@ export default function Footer() {
           <div>
             <Image src={Logo} alt="logo escola" />
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center gap-3 text-white">
             <div className="flex flex-row items-center gap-2">
               <Image
                 src={"/localization-icon.svg"}
@@ -23,9 +23,9 @@ export default function Footer() {
                 width={26}
                 height={22.8}
               />
-              <span>
+              <div className="text-center max-w-80">
                 Av. Nevaldo Rocha, 4475 - Morro Branco, Natal - RN, 59015-450.
-              </span>
+              </div>
             </div>
 
             <div className="flex flex-row items-center gap-2">
