@@ -15,7 +15,7 @@ export default function Footer() {
           <div>
             <Image src={Logo} alt="logo escola" />
           </div>
-          <div className="flex flex-col items-center justify-center gap-3 text-white">
+          <div className="flex flex-col items-center justify-center gap-3">
             <div className="flex flex-row items-center gap-2">
               <Image
                 src={"/localization-icon.svg"}
@@ -48,11 +48,11 @@ export default function Footer() {
               <span>(84) 3222-2991</span>
             </div>
           </div>
-          <div>
-            <button className="w-[179px] text-red-default border-[3px] border-red-default rounded-[50px] flex justify-center text-center">
+          <div className="flex flex-col items-center justify-center gap-3 font-fredoka">
+            <button className="w-[179px] h-8 text-white border-[3px] border-white rounded-[50px] flex justify-center text-center">
               Agende sua visita
             </button>
-            <button className="w-[179px] bg-red-default text-white rounded-[50px]">
+            <button className="w-[179px] h-8 bg-white text-red-default rounded-[50px]">
               Portal balãozinho
             </button>
           </div>
