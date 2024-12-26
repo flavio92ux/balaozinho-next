@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
   return (
@@ -8,9 +8,9 @@ export default function Home() {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="w-full h-[654px]"
+      className="flex justify-center items-center w-full h-[654px]"
     >
-
+      <Carousel />
     </div>
   );
 }
