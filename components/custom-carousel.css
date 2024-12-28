@@ -1,0 +1,17 @@
+.swiper-button-prev,
+.swiper-button-next {
+  color: #CC453C; /* Altere para a cor desejada */
+  font-weight: bold;
+  width: 40px; /* Tamanho opcional */
+  height: 40px; /* Tamanho opcional */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%);
+}
+
+.swiper-button-prev {
+  left: calc(50% - 700px); /* Distância fixa em relação à esquerda */
+}
+
+.swiper-button-next {
+  right: calc(50% - 700px); /* Distância fixa em relação à direita */
+}
